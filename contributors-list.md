@@ -3,6 +3,6 @@ All DAO module builders (smart contracts that create smart contracts) have a aut
 
 ## Airalab team:
 
-Name | GitHub | Ethereum network account address | Ethereum testnet account address
------------- | -------------| -------------| -------------|
-Sergey Lonshakov | [ensrationis](https://github.com/ensrationis) | `0x6EFBA8fb2AC5b6730729a972eC224426a287C3Ad` | `0x6EFBA8fb2AC5b6730729a972eC224426a287C3Ad`
+GitHub | Ethereum network account address | Ethereum testnet account address
+ -------------| -------------| -------------|
+[ensrationis](https://github.com/ensrationis) | `0x6EFBA8fb2AC5b6730729a972eC224426a287C3Ad` | `0x6EFBA8fb2AC5b6730729a972eC224426a287C3Ad`
