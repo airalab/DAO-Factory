@@ -6,7 +6,7 @@ Each contract creation costs - 0.01 Eth
 
 DAO factory core address - 0x4B94c11FF4B118CAD6d0D1831EcB60586a9241df
 
-Aira BuilderDAO address - 0xD1fb053Bd012352919C0D8BEa29d44D1f0b60527  
+Aira BuilderDAO address - 0x27f095952a9d717fb1c4af4cee775bf603398cc9  
 Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderDAO.json
 
 Aira BuilderCore address - 0x65Db698E7a340Bc73a60A7Da2762FeB33b0a312f  
