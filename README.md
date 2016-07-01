@@ -48,3 +48,5 @@ Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderTokenEmissi
 Aira BuilderShareSale address - 0x21e1e84f1c18620df96389841f408b8f4f1e6d70  
 Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderShareSale.json
 
+Aira BuilderCrowdSale address - 0xc66d85e1b3900e0e40bd3b7936b648177502f82b  
+Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderCrowdSale.json
