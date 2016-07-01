@@ -45,3 +45,6 @@ Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderTokenEther.
 Aira BuilderTokenEmission address - 0x30c92e56E648E80F69F1fcB580d86aE7CA5A2D3A  
 Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderTokenEmission.json
 
+Aira BuilderShareSale address - 0x21e1e84f1c18620df96389841f408b8f4f1e6d70  
+Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderShareSale.json
+
