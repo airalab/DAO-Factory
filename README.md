@@ -15,7 +15,7 @@ Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderCore.json
 Aira BuilderCashFlow address - 0x7d587D24Ca05A7384B245d260BcA3F6dEda56a86  
 Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderCashFlow.json
 
-Aira BuilderDAOMarketRegulator address - 0x1F5EB69B7BB72d4eBDcc028983c5188B44a06CC2  
+Aira BuilderDAOMarketRegulator address - 0xcad6b031530a839e3ac772b45f6fb30d98269a20 
 Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderDAOMarketRegulator.json
 
 Aira BuilderDAOKnowledgeStorage address - 0x777ba2B11DD9cE5ac901654d01c4D84948fb747E  
