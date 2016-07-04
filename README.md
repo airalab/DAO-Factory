@@ -30,7 +30,7 @@ Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderKProcess.js
 Aira BuilderKObject address - 0xD62517BAf6E82EA3b73eb7FE26c31D83aF5c5886  
 Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderKObject.json
 
-Aira BuilderMarket address - 0xf57af9978a68d4816cee271c30f0a7ed35142d56 
+Aira BuilderMarket address - 0xf57af9978a68d4816cee271c30f0a7ed35142d56  
 Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderMarket.json
 
 Aira BuilderToken address - 0xF4c7f9be8c32B20c4E9B844Bb09F3E0801F18B89  
