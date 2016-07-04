@@ -50,3 +50,6 @@ Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderShareSale.j
 
 Aira BuilderCrowdSale address - 0xc66d85e1b3900e0e40bd3b7936b648177502f82b  
 Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderCrowdSale.json
+
+Aira BuilderMarketRuleConstant address - 0x9aa3f174ab3216bb83b44e8d1c91e9354b42514e 
+Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderMarketRuleConstant.json
