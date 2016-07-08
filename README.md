@@ -1,55 +1,62 @@
-# DAO-factory
+# DAO factory
 
-## Testnet
+## Ethereum Testnet
 
-Each contract creation costs - 0.01 Eth
+Each contract creation costs: **0.01** `ether`
 
-DAO factory core address - 0xa76422591378d14fb6d94c9da48a42498d8b51da
+**DAO factory** core address 
 
-Aira BuilderDAO address - 0xb814efd3b486927fa2ba2ca9ea6a699bc8a09a0a  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderDAO.json
+> 0xa76422591378d14fb6d94c9da48a42498d8b51da`
 
-Aira BuilderCore address - 0xa53e401ad4e06733b9e5fe2d4702fd48932f8f4e 
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderCore.json
+### BuilderBoardOfDirectors :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderBoardOfDirectors.json)
 
-Aira BuilderCashFlow address - 0x7d587D24Ca05A7384B245d260BcA3F6dEda56a86  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderCashFlow.json
+> 0x2d0f38fbda602c4bd42c3919d63dd0d2bc5ec07d
 
-Aira BuilderDAOMarketRegulator address - 0xcad6b031530a839e3ac772b45f6fb30d98269a20 
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderDAOMarketRegulator.json
+### BuilderCashFlow :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderCashFlow.json)
 
-Aira BuilderDAOKnowledgeStorage address - 0x777ba2B11DD9cE5ac901654d01c4D84948fb747E  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderDAOKnowledgeStorage.json
+> 0xfd96736a8a1367b410640989022eb78c79043185
 
-Aira BuilderKnowledgeStorage address - 0x6e1b20543D14e7059608Ce8fc0BcD841d006C157  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderKnowledgeStorage.json
+### BuilderCore :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderCore.json)
 
-Aira BuilderKProcess address - 0x5Dbb929292C3409BDdaA6D5Fd9744ef3F214a51C  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderKProcess.json
+> 0xab4f4eadf6185ff782dd3d607fca9cf056f20b9c
 
-Aira BuilderKObject address - 0xD62517BAf6E82EA3b73eb7FE26c31D83aF5c5886  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderKObject.json
+### BuilderCrowdSale :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderCrowdSale.json)
 
-Aira BuilderMarket address - 0xd1a148c7d753c8da3f574fd15b942f748f220045
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderMarket.json
+> 0x756918301dda32e332450fd6ec62c51391c3e9b3
 
-Aira BuilderToken address - 0xF4c7f9be8c32B20c4E9B844Bb09F3E0801F18B89  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderToken.json
+### BuilderDAOMarketRegulator :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderDAOMarketRegulator.json)
 
-Aira BuilderTokenSpec address - 0x279424b9fe32F3DCFB8C2Bde51397Ba099379EC2  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderTokenSpec.json
+> 0x898483943f5f98b28fc24e45efe53c82076bb482
 
-Aira BuilderTokenEther address - 0xbb2695E90D82c6E4b87DA5db29a6762645c7D6f5  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderTokenEther.json
- 
-Aira BuilderTokenEmission address - 0x30c92e56E648E80F69F1fcB580d86aE7CA5A2D3A  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderTokenEmission.json
+### BuilderDAO :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderDAO.json)
 
-Aira BuilderShareSale address - 0x21e1e84f1c18620df96389841f408b8f4f1e6d70  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderShareSale.json
+> 0x05bc6aef81428d6f6476d9b6005071c267528d3b
 
-Aira BuilderCrowdSale address - 0xc66d85e1b3900e0e40bd3b7936b648177502f82b  
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderCrowdSale.json
+### BuilderMarketRuleConstant :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderMarketRuleConstant.json)
 
-Aira BuilderMarketRuleConstant address - 0x9aa3f174ab3216bb83b44e8d1c91e9354b42514e 
-Abi - https://github.com/airalab/core/blob/master/abi/builder/BuilderMarketRuleConstant.json
+> 0x7ab82de95a2ea0cb35637c095d5489f745796495
+
+### BuilderMarket :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderMarket.json)
+
+> 0xcda1cf1392fdfb5e1c403f1c982e273cf7fcd8a8
+
+### BuilderShareholder :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderShareholder.json)
+
+> 0x6bb6479624a59e4a87a9b37211f63089385ce13f
+
+### BuilderShareSale :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderShareSale.json)
+
+> 0xfb54c318e881ab869498c9bd06f7da84a621f10d
+
+### BuilderTokenEmission :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderTokenEmission.json)
+
+> 0xae8d2550f541b5f1fe9c528498c74105b661b53b
+
+### BuilderTokenEther :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderTokenEther.json)
+
+> 0x8ee53fa7ba6516d0fe133710b7e945e4d801c314
+
+### BuilderToken :: [abi](https://github.com/airalab/core/blob/master/abi/builder/BuilderToken.json)
+
+> 0x94eb8d20c5564a808fa025efbe40915bbf08655b
+
