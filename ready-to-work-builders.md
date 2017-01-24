@@ -22,3 +22,4 @@ Ether vault contract        | 1631147         | 629905
 The Blockchain Congress     | 2972622         | 536012
 The Shareholder Association | 2175874         | 559239
 Liquid democracy            | 1575802         | 573429
+Proxy account               | 1880751         | 632606
