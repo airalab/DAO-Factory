@@ -1,4 +1,4 @@
-# DAO factory
+# DAO Factory
 
 Сreate smart contracts on Ethereum Blockchain via transaction, without compile and deploy process. 
 
