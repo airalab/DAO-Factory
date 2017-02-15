@@ -1,4 +1,4 @@
-# Введение
+# Introduction
 ![DNA_replication_split](/img/DNA_replication_split.svg)
 
 **Replication (from lat. repeat, replicate)** is a crucial mechanism of information transfer in living organisms. It’s a basis for the evolution of humanity and life in general.
