@@ -1,5 +1,7 @@
 # DAO Factory
 
+[![Build Status](https://travis-ci.org/airalab/DAO-Factory.svg?branch=master)](https://travis-ci.org/airalab/DAO-Factory)
+
 Сreate smart contracts on Ethereum Blockchain via transaction, without compile and deploy process. 
 
 -----------------------
