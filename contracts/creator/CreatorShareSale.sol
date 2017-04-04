@@ -1,6 +1,6 @@
 pragma solidity ^0.4.4;
 
-import 'cashflow/ShareSale.sol';
+import 'dao/ShareSale.sol';
 
 library CreatorShareSale {
     function create(address _target, address _etherFund, address _shares, uint256 _price_wei) returns (ShareSale)

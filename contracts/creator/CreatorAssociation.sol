@@ -1,6 +1,6 @@
 pragma solidity ^0.4.4;
 
-import 'democracy/Association.sol';
+import 'dao/Association.sol';
 
 library CreatorAssociation {
     function create(address sharesAddress, uint256 minimumSharesToPassAVote, uint256 minutesForDebate) returns (Association)

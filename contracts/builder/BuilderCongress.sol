@@ -47,7 +47,7 @@ contract BuilderCongress is Builder {
                                           marginOfVotesForMajority,
                                           congressLeader);
         if (congressLeader == 0) {
-            inst.changeMembership(_client, true, 'founder');
+            inst.addMember(_client, 'The Founder');
             inst.setOwner(_client);
             inst.setHammer(_client);
         } else {
