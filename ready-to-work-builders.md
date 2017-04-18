@@ -14,6 +14,7 @@ Crowdfunding builder |   [`0x34fa9a12c4B474098cDb89f83D62A964f234258a`](https://
 The Shareholder Association builder |  [``](https://kovan.etherscan.io/address/) |  [BuilderAssociation.json](https://raw.githubusercontent.com/airalab/core/master/abi/builder/BuilderAssociation.json) | [Association.json](https://raw.githubusercontent.com/airalab/core/master/abi/modules/Association.json) | - | 0.1 Ether
 Liquid democracy builder |   [``](https://kovan.etherscan.io/address/) |  [BuilderLiquidDemocracy.json](https://raw.githubusercontent.com/airalab/core/master/abi/builder/BuilderLiquidDemocracy.json) | [LiquidDemocracy.json](https://raw.githubusercontent.com/airalab/core/master/abi/modules/LiquidDemocracy.json) | - | 0.1 Ether
 Proxy account builder |   [``](https://kovan.etherscan.io/address/) |  [BuilderProxy.json](https://raw.githubusercontent.com/airalab/core/master/abi/builder/BuilderProxy.json) | [Proxy.json](https://raw.githubusercontent.com/airalab/core/master/abi/modules/Proxy.json) | - | 0.1 Ether
+Liability market builder |   [`0xE3a685841EE9AC1BED4Cda872aEA65C472a2ac47`](https://kovan.etherscan.io/address/0xE3a685841EE9AC1BED4Cda872aEA65C472a2ac47) |  [BuilderLiabilityMarket.json](https://raw.githubusercontent.com/airalab/core/master/abi/builder/BuilderLiabilityMarket.json) | [LiabilityMarket.json](https://raw.githubusercontent.com/airalab/core/develop/abi/modules/LiabilityMarket.json) | - | 0 Ether
 
 ## Information for administrators
 

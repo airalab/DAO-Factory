@@ -1,3 +1,6 @@
 [submodule "core"]
-	path = core
+	path = modules/core
 	url = https://github.com/airalab/core
+[submodule "modules/Aira-IoT"]
+	path = modules/Aira-IoT
+	url = https://github.com/airalab/Aira-IoT
