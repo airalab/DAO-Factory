@@ -1,6 +1,6 @@
 pragma solidity ^0.4.4;
 
-import 'democracy/LiquidDemocracy.sol';
+import 'dao/LiquidDemocracy.sol';
 
 library CreatorLiquidDemocracy {
     function create(address votingWeightToken, string forbiddenFunctionCall, uint256 percentLossInEachRound) returns (LiquidDemocracy)

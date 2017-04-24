@@ -42,19 +42,15 @@ contract BuilderCongress is Builder {
         if (_client == 0)
             _client = msg.sender;
  
+        if (congressLeader == 0)
+            congressLeader = _client;
+
         var inst = CreatorCongress.create(minimumQuorumForProposals,
                                           minutesForDebate,
                                           marginOfVotesForMajority,
                                           congressLeader);
-        if (congressLeader == 0) {
-            inst.changeMembership(_client, true, 'founder');
-            inst.setOwner(_client);
-            inst.setHammer(_client);
-        } else {
-            inst.setOwner(congressLeader);
-            inst.setHammer(congressLeader);
-        }
-
+        inst.setOwner(_client);
+        inst.setHammer(_client);
         getContractsOf[_client].push(inst);
         Builded(_client, inst);
         return inst;

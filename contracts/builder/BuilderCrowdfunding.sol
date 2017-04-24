@@ -1,5 +1,5 @@
 //
-// AIRA Builder for ShareSale contract
+// AIRA Builder for Crowdfunding contract
 //
 // Ethereum address:
 //  - Mainnet:
@@ -7,24 +7,31 @@
 //
 
 pragma solidity ^0.4.4;
-import 'creator/CreatorShareSale.sol';
+import 'creator/CreatorCrowdfunding.sol';
 import './Builder.sol';
 
 /**
- * @title ShareSale contract builder
+ * @title BuilderCrowdfunding contract
  */
-contract BuilderShareSale is Builder {
+contract BuilderCrowdfunding is Builder {
     /**
      * @dev Run script creation contract
-     * @param _target is a target of funds
-     * @param _etherFund is a ether wallet token
-     * @param _shares is a shareholders token contract 
-     * @param _price_wei is price of one share in wei
-     * @param _client is a contract destination address (zero for sender)
      * @return address new contract
      */
-    function create(address _target, address _etherFund,
-                    address _shares, uint _price_wei, address _client) payable returns (address) {
+    function create(
+        address _fund,
+        address _bounty,
+        string _reference,
+        uint256 _startBlock,
+        uint256 _stopBlock,
+        uint256 _minValue,
+        uint256 _maxValue,
+        uint256 _scale,
+        uint256 _startRatio,
+        uint256 _reductionStep,
+        uint256 _reductionValue,
+        address _client
+    ) payable returns (address) {
         if (buildingCostWei > 0 && beneficiary != 0) {
             // Too low value
             if (msg.value < buildingCostWei) throw;
@@ -44,11 +51,13 @@ contract BuilderShareSale is Builder {
         if (_client == 0)
             _client = msg.sender;
  
-        var inst = CreatorShareSale.create(_target, _etherFund, _shares, _price_wei);
-        getContractsOf[_client].push(inst);
-        Builded(_client, inst);
+        var inst = CreatorCrowdfunding.create(_fund, _bounty, _reference, _startBlock,
+                                              _stopBlock, _minValue, _maxValue, _scale,
+                                              _startRatio, _reductionStep, _reductionValue);
         inst.setOwner(_client);
         inst.setHammer(_client);
+        getContractsOf[_client].push(inst);
+        Builded(_client, inst);
         return inst;
     }
 }
