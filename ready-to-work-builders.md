@@ -27,3 +27,4 @@ The Shareholder Association | 2175874         | 559239
 Liquid democracy            | 1575802         | 573429
 Proxy account               | 1880751         | 632606
 Crowdfunding                | 1876392         | 853501
+Ambix                       | 1789444         | 752433
