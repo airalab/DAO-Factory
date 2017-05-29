@@ -13,6 +13,7 @@ Liquid democracy builder |   [`0xb252F2c678cA825bc42c3917d0Df5b00525dfF03`](http
 Proxy account builder |   [`0x2A52f19229b7938bE8605a7f7cEe7DCb41Bea127`](https://etherscan.io/address/0x2A52f19229b7938bE8605a7f7cEe7DCb41Bea127) |  [BuilderProxy.json](https://raw.githubusercontent.com/airalab/DAO-Factory/master/abi/BuilderProxy.json) | [Proxy.json](https://raw.githubusercontent.com/airalab/core/master/abi/Proxy.json) | - | 0.1 Ether
 Crowdfunding builder | [`0x113058C101b2D78e001D4a7D2174a66b5ff3A4A7`](https://etherscan.io/address/0x113058C101b2D78e001D4a7D2174a66b5ff3A4A7) |  [BuilderCrowdfunding.json](https://raw.githubusercontent.com/airalab/DAO-Factory/master/abi/BuilderCrowdfunding.json) | [Crowdfunding.json](https://raw.githubusercontent.com/airalab/core/master/abi/Crowdfunding.json) | - | 0.1 Ether
 Presale builder | [`0x4C3c6F5f2ef44F5E2fFCf6c20b906A91D246c9A2`](https://etherscan.io/address/0x4C3c6F5f2ef44F5E2fFCf6c20b906A91D246c9A2) |  [BuilderPresale.json](https://raw.githubusercontent.com/airalab/DAO-Factory/master/abi/BuilderPresale.json) | [Presale.json](https://raw.githubusercontent.com/airalab/core/master/abi/Presale.json) | - | 0.1 Ether
+Ambix builder | [`0xfEae5C3ecAb2B86842189e637BC11bcd8b2608D4`](https://etherscan.io/address/0xfEae5C3ecAb2B86842189e637BC11bcd8b2608D4) |  [BuilderAmbix.json](https://raw.githubusercontent.com/airalab/DAO-Factory/master/abi/BuilderAmbix.json) | [Ambix.json](https://raw.githubusercontent.com/airalab/core/master/abi/Ambix.json) | - | 0.1 Ether
 
 ## Information for administrators
 
