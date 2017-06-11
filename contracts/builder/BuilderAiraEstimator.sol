@@ -24,9 +24,6 @@ contract BuilderAiraEstimator is Builder {
         uint256 _investorsFee,
         uint256 _metricsPrice,
         address _metrics,
-        address _air,
-        address _metricsMarket,
-        address _airaMarket,
         address _client
     ) payable returns (address) {
         if (buildingCostWei > 0 && beneficiary != 0) {
@@ -51,10 +48,7 @@ contract BuilderAiraEstimator is Builder {
         var inst = CreatorAiraEstimator.create(_visionaryFee,
                                                _investorsFee,
                                                _metricsPrice,
-                                               _metrics,
-                                               _air,
-                                               _metricsMarket,
-                                               _airaMarket);
+                                               _metrics);
         getContractsOf[_client].push(inst);
         Builded(_client, inst);
         inst.setOwner(_client);
