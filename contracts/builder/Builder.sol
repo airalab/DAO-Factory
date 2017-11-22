@@ -1,4 +1,5 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.18;
+
 import 'common/Object.sol';
 
 /**
@@ -17,7 +18,7 @@ contract Builder is Object {
      * @dev Get last address
      * @return last address contract
      */
-    function getLastContract() constant returns (address) {
+    function getLastContract() public view returns (address) {
         var sender_contracts = getContractsOf[msg.sender];
         return sender_contracts[sender_contracts.length - 1];
     }
@@ -29,7 +30,7 @@ contract Builder is Object {
      * @dev Set beneficiary
      * @param _beneficiary is address of beneficiary
      */
-    function setBeneficiary(address _beneficiary) onlyOwner
+    function setBeneficiary(address _beneficiary) public onlyOwner
     { beneficiary = _beneficiary; }
 
     /* Building cost  */
@@ -39,7 +40,7 @@ contract Builder is Object {
      * @dev Set building cost
      * @param _buildingCostWei is cost
      */
-    function setCost(uint _buildingCostWei) onlyOwner
+    function setCost(uint _buildingCostWei) public onlyOwner
     { buildingCostWei = _buildingCostWei; }
 
     /* Security check report */
@@ -49,6 +50,6 @@ contract Builder is Object {
      * @dev Set security check report URI
      * @param _uri is an URI to report
      */
-    function setSecurityCheck(string _uri) onlyOwner
+    function setSecurityCheck(string _uri) public onlyOwner
     { securityCheckURI = _uri; }
 }
