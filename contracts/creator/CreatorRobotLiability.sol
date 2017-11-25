@@ -1,10 +1,19 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.18;
 
 import 'liability/RobotLiability.sol';
 
 library CreatorRobotLiability {
-    function create(bytes _model, bytes _objective, address _promisee, address _promisor, uint256 _cost, uint256 _count, uint256 _fee) public returns (RobotLiability)
-    { return new RobotLiability(_model, _objective, _promisee, _promisor, _cost, _count, _fee); }
+    function create(
+        bytes _model,
+        bytes _objective,
+        address _promisee,
+        address _promisor,
+        uint256 _cost,
+        uint256 _count,
+        uint256 _fee
+    ) public returns (RobotLiability) {
+        return new RobotLiability(_model, _objective, _promisee, _promisor, _cost, _count, _fee);
+    }
 
     function version() public pure returns (string)
     { return "v0.6.5"; }

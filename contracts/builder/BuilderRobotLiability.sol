@@ -4,45 +4,45 @@ import 'creator/CreatorRobotLiability.sol';
 import 'builder/Builder.sol';
 
 contract BuilderRobotLiability is Builder {
+    /**
+     * @dev Used market order hashes tracking.
+     */
     mapping(bytes32 => bool) public usedHash;
 
-    bytes constant MSGPREFIX = "0x19457468657265756d205369676e6564204d6573736167653a0a3332";
+    /* Constants */
+    ERC20 public constant utility = ERC20(0x5DF531240f97049ee8d28A8E51030A3b5a8e8CE4);
+    ERC20 public constant weth    = ERC20(0xC00Fd9820Cd2898cC4C054B7bF142De637ad129A);
+    bytes constant MSGPREFIX = "\x19Ethereum Signed Message:\n32";
     
-    function recover(bytes32 h, bytes sig) pure public returns (address) {
-        var (v, r, s) = signSplit(sig);
-        return ecrecover(keccak256(MSGPREFIX, h), v, r, s);
-    }
-    
-    function signSplit(bytes signature) pure public returns (uint8 v, bytes32 r, bytes32 s) {
-        uint256 r_;
-        uint256 s_;
-        for (uint i = 0; i < 32; ++i) {
-            r_ = (r_ << 8) + uint8(signature[i]);
-            s_ = (s_ << 8) + uint8(signature[i+32]);
-        }
-        r = bytes32(r_);
-        s = bytes32(s_);
-        v = uint8(signature[64]);
-    }
-    
+    /**
+     * @dev Create robot liability contract
+     * @param _model Robot behaviour model
+     * @param _objective Task for the robot
+     * @param _param Liability financial params: [cost, count, fee]
+     * @param _sign Liability cyptographic params: [saltA, vA, rA, sA, saltB, vB, rB, sB]
+     */
     function create(
-        bytes model,
-        bytes objective,
-        uint256[3] param,
-        bytes32 saltA,
-        bytes signA,
-        bytes32 saltB,
-        bytes signB
+        bytes _model,
+        bytes _objective,
+        uint256[3] _param,
+        bytes32[8] _sign
     ) public {
-        require(!usedHash[keccak256(model, objective, param[0], param[1], param[2], saltA)]); 
-        require(!usedHash[keccak256(model, objective, param[0], param[1], param[2], saltA)]); 
-        usedHash[keccak256(model, objective, param[0], param[1], param[2], saltA)] = true; 
-        usedHash[keccak256(model, objective, param[0], param[1], param[2], saltA)] = true; 
+        var askHash = keccak256(_model, _objective, _param[0], _param[1], _param[2], _sign[0]);
+        var bidHash = keccak256(_model, _param[0], _param[1], _param[2], _sign[4]);
 
-        var promisee = recover(keccak256(model, objective, param[0], param[1], param[2], saltA), signA);
-        var promisor = recover(keccak256(model, param[0], param[1], param[2], saltB), signB);
+        require(!usedHash[askHash] && !usedHash[bidHash]);
+        usedHash[askHash] = true;
+        usedHash[bidHash] = true;
 
-        Builded(msg.sender, CreatorRobotLiability.create(
-            model, objective, promisee, promisor, param[0], param[1], param[2]));
+        var promisee = ecrecover(keccak256(MSGPREFIX, askHash), uint8(_sign[1]), _sign[2], _sign[3]);
+        var promisor = ecrecover(keccak256(MSGPREFIX, bidHash), uint8(_sign[5]), _sign[6], _sign[7]);
+
+        var inst = CreatorRobotLiability.create(
+						_model, _objective, promisee, promisor, _param[0], _param[1], _param[2]);
+        require(weth.transferFrom(promisee, inst, _param[0] * _param[1]));
+        require(utility.transferFrom(promisor, inst, _param[2]));
+
+        getContractsOf[msg.sender].push(inst);
+        Builded(msg.sender, inst);
     }
 }
